@@ -16,7 +16,8 @@
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.11",
     "nuxt": "^2.4.0",
-    "nuxt-i18n": "^5.8.5"
+    "nuxt-i18n": "^5.8.5",
+    "wow.js": "^1.2.2"
   },
   "devDependencies": {
     "@kazupon/vue-i18n-loader": "^0.3.0",

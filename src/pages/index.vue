@@ -181,6 +181,8 @@ import { transformLocales } from '@/locales'
 import LayoutHeader from '@/components/layout-header.vue'
 import LayoutFooter from '@/components/layout-footer.vue'
 
+import '@/assets/css/animate.css'
+
 const messages = {
   体验设计指南: 'EXPERIENCE DESIGN GUIDELINES',
   一套符合B类场景的设计体系:
@@ -215,6 +217,14 @@ export default {
   },
   i18n: {
     messages: transformLocales(messages)
+  },
+  mounted() {
+    if (!this.$isServer) {
+      this.$nextTick(() => {
+        const WOW = require('wow.js')
+        new WOW({ offset: 100 }).init()
+      })
+    }
   }
 }
 </script>
