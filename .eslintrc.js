@@ -18,5 +18,6 @@ module.exports = {
   // add your custom rules here
   rules: {
     camelcase: 0,
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
   }
 }
