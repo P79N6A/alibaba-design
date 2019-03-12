@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import { mapState } from 'vuex'
 
+import UiLink from '@/components/ui-link'
+
+Vue.component('ui-link', UiLink)
 Vue.mixin({
   data() {
     return {}

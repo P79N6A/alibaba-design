@@ -18,9 +18,9 @@
             :key="index"
           >
             <span v-if="item.type === 'title'">{{ item.label }}</span>
-            <nuxt-link v-else :to="localePath(item.url)">
+            <ui-link v-else :src="item.url">
               {{ item.label }}
-            </nuxt-link>
+            </ui-link>
           </li>
         </ul>
       </div>
